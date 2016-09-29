@@ -9,11 +9,17 @@ angularApp.config(function ($routeProvider){
     controllerAs: 'main'
   })
 
-  .when ('/dashboard',
+  .when ('/jobseeker',
   {
-    templateUrl: 'list/profile.html',
-    controller: 'ProfileCtrl',
-    controllerAs: 'profile'
+    templateUrl: 'list/jobseeker.html',
+    controller: 'JobseekerCtrl',
+    controllerAs: 'job'
+  })
+  .when ('/employer',
+  {
+    templateUrl: 'list/employer.html',
+    controller: 'EmployerCtrl',
+    controllerAs: 'employ'
   })
   })
 
@@ -23,7 +29,14 @@ angularApp.config(function ($routeProvider){
 
 
 }])
-angularApp.controller("ProfileCtrl",['$resource','$filter',function($resource,$filter){
+
+  angularApp.controller("JobseekerCtrl",['$resource','$filter',function($resource,$filter){
+  var vm=this;
+  console.log("hello world")
+
+
+}])
+angularApp.controller("EmployerCtrl",['$resource','$filter',function($resource,$filter){
 var vm=this;
 console.log("hello world")
 
