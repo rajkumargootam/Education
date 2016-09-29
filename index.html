@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="app/job.css">
       <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -24,20 +24,21 @@
 
   </head>
   <body ng-app="educateApp">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar">
+    <nav class="navbar navbar-default ">
       <div class="container">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">YoungBharath</a>
         </div>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#/jobseeker">jobseeker</a></li>
-            <li><a href="#/employer">Employers</a></li>
-            </ul>
-
+        <div class ="unorderlist">
+        <ul class="nav navbar-nav navbar-right pull-right">
+          <li><a href="#/jobseeker">jobseeker</a></li>
+          <li><a href="#/employer">Employers</a></li>
+        </ul>
+        </div>
       </div>
     </nav>
-
+    </div>
 
     <div ng-view></div>
   </body>

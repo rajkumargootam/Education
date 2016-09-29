@@ -39,6 +39,8 @@ angularApp.config(function ($routeProvider){
 angularApp.controller("EmployerCtrl",['$resource','$filter',function($resource,$filter){
 var vm=this;
 console.log("hello world")
-
-
+    vm.user = {
+      name : "Naomi Black",
+      password: ""
+    }
 }])
